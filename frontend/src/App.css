@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #dee2e6;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  .fa-solid {
+    color: darkgray;
+    font-size: x-large;
+    margin: 0 10px;
+  }
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .comment {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    margin: 10px;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 5px;
+    background-color: #fff;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  .button:hover {
+    background-color: #555;
+  }
+  .post {
+
+    text-align: revert;
+    background: #fbd38d;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 16px;
+    
+  }
+  .loader {
+    border: 16px solid #ded7d7;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 20%;
+  }
+  
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
